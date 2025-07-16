@@ -94,13 +94,13 @@ function loadPage(page) {
     currentPage = page;
     
     // Update active navigation
-    document.querySelectorAll('.nav-btn, .mobile-nav-btn').forEach(btn => {
+    document.querySelectorAll('.nav-btn, .mobile-nav-btn,.footer-link').forEach(btn => {
         btn.classList.remove('active');
         if (btn.getAttribute('data-page') === page) {
             btn.classList.add('active');
         }
-    });
-
+    });   
+    
     // Load page content
     switch(page) {
         case 'home':
@@ -121,12 +121,35 @@ function loadPage(page) {
         case 'sale':
             loadSalePage();
             break;
+        case 'about':
+            loadAboutPage();
+            break;
         default:
             loadHomePage();
     }
 
-    // Scroll to top
-    window.scrollTo(0, 0);
+    /*// Scroll to top
+    window.scrollTo(0, 0);*/
+    const active = document.activeElement;
+
+    if (active && active.classList.contains('footer-link')) {
+        const target = active.getAttribute('data-target');
+
+        if (target) {
+            // Only delay scroll if there's a target
+            setTimeout(() => {
+                const el = document.querySelector(target);
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+            }, 150);
+        } else {
+            // No target → scroll to top instantly
+            window.scrollTo(0, 0);
+        }
+    } else {
+        // Not a footer link → scroll to top
+        window.scrollTo(0, 0);
+    }
+
 }
 
 // HOME PAGE
@@ -711,6 +734,247 @@ function loadProductPage(productId) {
 
                     <button class="load-more-reviews">Load More Reviews</button>
                 </div>
+            </div>
+        </div>
+    `;
+} 
+// ABOUT PAGE
+function loadAboutPage() {
+    mainContent.innerHTML = `
+        <div class="page about-page">
+            <div class="page-container">
+                <h1 class="page-title">About Us</h1>
+                <div class="about-section" id="values">
+                    <h2 class="section-title">Style That Speaks Your Language</h2>
+                    <p class="section-text">
+                        We believe fashion should be effortless, inclusive, and authentically you.  
+                        Since 2018, we’ve been crafting wardrobe essentials that transition seamlessly from work to weekend — designed for the modern individual who values both comfort and style.
+                    </p>
+
+                <div class="values-grid">
+                    <div class="value-item">
+                        <h3 class="value-title">Sustainability First</h3>
+                        <p class="value-text">
+                            We source from certified sustainable mills and use eco-friendly packaging.  
+                            Every purchase plants a tree through our partnership with One Tree Planted.
+                        </p>
+                    </div>
+                    <div class="value-item">
+                        <h3 class="value-title">Inclusive Sizing</h3>
+                        <p class="value-text">
+                            Real bodies come in all shapes and sizes. Our collections range from XS to 4XL,  
+                            with detailed size guides and free exchanges to ensure the perfect fit.
+                        </p>
+                    </div>
+                    <div class="value-item">
+                        <h3 class="value-title">Ethical Production</h3>
+                        <p class="value-text">
+                            We maintain long-term relationships with family-owned manufacturers  
+                            who share our commitment to fair wages and safe working conditions.
+                        </p>
+                    </div>
+                    <div class="value-item">
+                        <h3 class="value-title">Quality Over Quantity</h3>
+                        <p class="value-text">
+                            Each piece is designed to last. We test our garments through 50+ wash cycles  
+                            and offer a 2-year quality guarantee.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+                <div class="about-section" id="careers">
+                    <h2 class="section-title">Careers</h2>
+                    <p class="section-text">
+                        We’re always looking for passionate creatives, developers, and marketers.  
+                        Drop us a line or check our current openings to join the crew.
+                    </p>
+                </div>
+
+                <div class="about-section" id="privacy">
+                    <h2 class="section-title">Privacy Policy</h2>
+                    <p class="section-text">
+                        Your privacy matters. We never sell or share your data. View our complete policy for details on how we collect, use, and protect your information.
+                    </p>
+                </div>
+
+                <div class="about-section" id="terms">
+                    <h2 class="section-title">Terms & Conditions</h2>
+                    <p class="section-text">
+                        By shopping with us, you agree to our terms of service. Read more about payment, shipping, and user responsibilities here.
+                    </p>
+                </div>
+
+                <div class="about-section" id="contact">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-text">
+                        <strong>Customer Service:</strong> <a href="mailto:hello@brandname.com">hello@brandname.com</a> | 1-800-XXX-XXXX<br>
+                        <strong>Hours:</strong> Mon–Fri: 9AM–6PM EST | Sat: 10AM–4PM EST<br><br>
+
+                        <strong>Press Inquiries:</strong> <a href="mailto:press@brandname.com">press@brandname.com</a><br>
+                        <strong>Wholesale:</strong> <a href="mailto:wholesale@brandname.com">wholesale@brandname.com</a><br>
+                        <strong>Partnerships:</strong> <a href="mailto:partnerships@brandname.com">partnerships@brandname.com</a><br><br>
+
+                        <strong>Mailing Address:</strong><br>
+                        Brand Name<br>
+                        123 Fashion Street<br>
+                        Portland, OR 97201
+                    </p>
+                </div>
+
+
+                <div class="about-section" id="team">
+                    <h2 class="section-title">The People Behind Your Wardrobe</h2>
+                
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <h3 class="member-name">Sarah Chen</h3>
+                            <p class="member-role">Founder & Creative Director</p>
+                            <p class="member-bio">
+                                Former fashion buyer turned entrepreneur. Sarah combines her industry expertise with a passion for sustainable fashion.  
+                                When she’s not designing our next collection, you’ll find her hiking with her rescue dog, Max.
+                            </p>
+                        </div>
+
+                        <div class="team-member">
+                            <h3 class="member-name">Miguel Rodriguez</h3>
+                            <p class="member-role">Head of Operations</p>
+                            <p class="member-bio">
+                                With 15 years in supply chain management, Miguel ensures every order ships perfectly and on time.  
+                                Coffee enthusiast and weekend rock climber.
+                            </p>
+                        </div>
+
+                        <div class="team-member">
+                            <h3 class="member-name">Priya Patel</h3>
+                            <p class="member-role">Customer Experience Lead</p>
+                            <p class="member-bio">
+                                The friendly voice behind our customer service. Priya’s mission is making every shopping experience delightful.  
+                                Yoga instructor and plant parent to 30+ houseplants.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section" id="community">
+                    <h2 class="section-title">More Than Just Clothing</h2>
+
+                    <div class="community-grid">
+                        <div class="community-item">
+                            <h3 class="community-title">Newsletter</h3>
+                            <p class="community-text">
+                                Be the first to know about new arrivals, styling tips, and exclusive member discounts.
+                            </p>
+                        </div>
+
+                        <div class="community-item">
+                            <h3 class="community-title">Social Media</h3>
+                            <p class="community-text">
+                                Share your style using <strong>#brandnamestyle</strong> — we love seeing how you wear our pieces!
+                            </p>
+                        </div>
+
+                        <div class="community-item">
+                            <h3 class="community-title">Customer Reviews</h3>
+                            <p class="community-text">
+                                Your feedback shapes our future designs.  
+                                Check out what other customers are saying and leave your own review.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="about-section" id="faq">
+                    <h2 class="section-title">FAQ</h2>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">What sizes do you offer?</h3>
+                        <p class="faq-answer">
+                            We offer sizes XS through 4XL in most styles. Our detailed size guide includes measurements for bust, waist, hips, and length. If you’re between sizes or unsure, our fit specialists are happy to help you choose the right size.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">How do I know if something will fit?</h3>
+                        <p class="faq-answer">
+                            Each product page includes detailed measurements and fit notes. We also offer free exchanges within 30 days if the fit isn’t quite right. Our customer service team can provide personalized sizing recommendations.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">What’s your return policy?</h3>
+                        <p class="faq-answer">
+                            We offer free returns within 30 days of purchase. Items must be unworn, unwashed, and in original condition with tags attached. Return shipping is free, and refunds are processed within 5–7 business days.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">How long does shipping take?</h3>
+                        <p class="faq-answer">
+                            Standard shipping takes 3–5 business days within the US. Express shipping (1–2 business days) is available for an additional fee. International shipping times vary by location (7–14 business days).
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">Are your clothes really sustainable?</h3>
+                        <p class="faq-answer">
+                            Yes! We use certified organic and recycled materials whenever possible, work with eco-friendly manufacturers, and use plastic-free packaging. We’re also carbon-neutral certified and plant a tree with every purchase.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">How should I care for my clothes?</h3>
+                        <p class="faq-answer">
+                            Care instructions are included with each item and on product pages. Most pieces are machine washable in cold water. We recommend air drying to maintain fabric quality and reduce environmental impact.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">Do you offer alterations?</h3>
+                        <p class="faq-answer">
+                            While we don’t offer in-house alterations, we provide a list of recommended tailors in major cities. We also offer lifetime repair services for manufacturing defects or normal wear.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">Can I track my order?</h3>
+                        <p class="faq-answer">
+                            Absolutely! You’ll receive a tracking number via email once your order ships. You can also check your order status anytime by logging into your account or using our order lookup tool.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">What payment methods do you accept?</h3>
+                        <p class="faq-answer">
+                            We accept all major credit cards, PayPal, Apple Pay, Google Pay, and Klarna for buy-now-pay-later options. All payments are processed securely through encrypted checkout.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">Do you have a loyalty program?</h3>
+                        <p class="faq-answer">
+                            Yes! Our VIP program offers early access to sales, exclusive discounts, birthday rewards, and points on every purchase. Sign up is free and automatic with your first order.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">What if I receive a damaged item?</h3>
+                        <p class="faq-answer">
+                            We’re sorry if that happens! Contact us within 48 hours of delivery with photos, and we’ll send a replacement right away. Damaged items due to shipping are covered by our satisfaction guarantee.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">Do you offer wholesale or bulk discounts?</h3>
+                        <p class="faq-answer">
+                            Yes, we work with retailers and offer corporate discounts for bulk orders. Contact our wholesale team at <a href="mailto:wholesale@brandname.com">wholesale@brandname.com</a> for pricing and minimum order requirements.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     `;
