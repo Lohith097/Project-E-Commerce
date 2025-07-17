@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SLAY Fashion Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/terms.css">
+    </head>
+
+<body>
+    <!-- Header -->
+      <header id="header" class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo-section">
+                    <button id="logo-btn" class="logo" onclick="window.location.href='index.html'">SLAY</button>
+                </div>
+
+                <!-- Search Bar - Desktop -->
+                <div class="search-section">
+                    <div class="search-container">
+                        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                        <input type="text" id="search-input" placeholder="Search products..." class="search-input">
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <button class="nav-btn" onclick="window.location.href='index.html'">Home</button>
+                </nav>
+
+                <!-- Right Side Icons -->
+    </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu hidden">
+                <!-- Mobile Search -->
+                <div class="mobile-search">
+                    <div class="search-container1">
+                        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                        <input type="text" placeholder="Search products..." class="search-input">
+                    </div>
+                </div>
+
+                <!-- Mobile Navigation Links -->
+                <div class="mobile-nav">
+                    <button class="mobile-nav-btn" data-page="home">Home</button>
+                    <button class="mobile-nav-btn" data-page="shop">Shop</button>
+                    <button class="mobile-nav-btn" data-page="categories">Categories</button>
+                    <button class="mobile-nav-btn" data-page="wishlist">Wishlist</button>
+                    <button id="mobile-user-btn" class="mobile-nav-btn">Login / Sign Up</button>
+                    <button class="mobile-nav-btn sale-btn" data-page="sale">SALE</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="content-layout">
+                <!-- Sidebar Navigation -->
+                <aside class="sidebar">
+                    <div class="sidebar-content">
+                        <h2 class="sidebar-title">Table of Contents</h2>
+                        <nav class="toc">
+                            <a href="#section-1" class="toc-link" onclick="scrollToSection('section-1')">1. Agreement to Terms</a>
+                            <a href="#section-2" class="toc-link" onclick="scrollToSection('section-2')">2. Intellectual Property Rights</a>
+                            <a href="#section-3" class="toc-link" onclick="scrollToSection('section-3')">3. User Representations</a>
+                            <a href="#section-4" class="toc-link" onclick="scrollToSection('section-4')">4. Prohibited Activities</a>
+                            <a href="#section-5" class="toc-link" onclick="scrollToSection('section-5')">5. Purchases and Payment</a>
+                            <a href="#section-6" class="toc-link" onclick="scrollToSection('section-6')">6. Return and Refund Policy</a>
+                            <a href="#section-7" class="toc-link" onclick="scrollToSection('section-7')">7. Privacy Policy</a>
+                            <a href="#section-8" class="toc-link" onclick="scrollToSection('section-8')">8. Termination</a>
+                            <a href="#section-9" class="toc-link" onclick="scrollToSection('section-9')">9. Disclaimer</a>
+                            <a href="#section-10" class="toc-link" onclick="scrollToSection('section-10')">10. Limitation of Liability</a>
+                            <a href="#section-11" class="toc-link" onclick="scrollToSection('section-11')">11. Governing Law</a>
+                            <a href="#section-12" class="toc-link" onclick="scrollToSection('section-12')">12. Contact Information</a>
+                        </nav>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="main-content">
+                    <div class="document">
+                        <!-- Document Header -->
+                        <div class="document-header">
+                            <h1 class="document-title">Terms and Conditions</h1>
+                            <div class="document-meta">
+                                <p>Last updated: <span class="meta-highlight">January 15, 2025</span></p>
+                                <p>Effective date: <span class="meta-highlight">January 15, 2025</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Introduction -->
+                        <div class="introduction">
+                            <p class="intro-text">
+                                These Terms and Conditions ("Terms", "Terms and Conditions") govern your relationship with our e-commerce website operated by E-Commerce Store ("us", "we", or "our"). Please read these Terms and Conditions carefully before using our service.
+                            </p>
+                            <p class="intro-text">
+                                Your access to and use of the service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the service.
+                            </p>
+                        </div>
+
+                        <!-- Section 1 -->
+                        <section id="section-1" class="terms-section">
+                            <h2 class="section-title">
+                                <span class="section-number">1</span>
+                                Agreement to Terms
+                            </h2>
+                            <div class="section-content">
+                                <p>By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.</p>
+                                <p>We reserve the right to change these terms and conditions at any time. Your continued use of the website following the posting of changes constitutes your acceptance of such changes.</p>
+                            </div>
+                        </section>
+
+                        <!-- Section 2 -->
+                        <section id="section-2" class="terms-section">
+                            <h2 class="section-title">
+                                <span class="section-number">2</span>
+                                Intellectual Property Rights
+                            </h2>
+                            <div class="section-content">
+                                <p>The service and its original content, features, and functionality are and will remain the exclusive property of E-Commerce Store and its licensors. The service is protected by copyright, trademark, and other laws.</p>
+                                <p>Our trademarks and trade dress may not be used in connection with any product or service without our prior written consent.</p>
+                                <ul class="content-list">
+                                    <li>All content, including but not limited to text, images, graphics, and software</li>
+                                    <li>Product descriptions and specifications</li>
+                                    <li>Website design and user interface elements</li>
+                                    <li>Logos, trademarks, and brand elements</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <!-- Section 3 -->
+                        <section id="section-3" class="terms-section">
+                            <h2 class="section-title">
+                                <span class="section-number">3</span>
+                                User Representations
+                            </h2>
+                            <div class="section-content">
+                                <p>By using our service, you represent and warrant that:</p>
+                                <ul class="content-list">
+                                    <li>You are at least 18 years of age or have parental/guardian consent</li>
+                                    <li>You have the legal capacity to enter into these Terms</li>
+                                    <li>All information you provide is accurate and current</li>
+                                    <li>You will maintain the accuracy of such information</li>
+                                    <li>You have not been suspended or removed from our service</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <!-- Section 4 -->
+                        <section id="section-4" class="terms-section">
+                            <h2 class="section-title">
+                                <span class="section-number">4</span>
+                                Prohibited Activities
+                            </h2>
+                            <div class="section-content">
+                                <p>You may not access or use the service for any purpose other than that for which we make the service available. Prohibited activities include but are not limited to:</p>
+                                <div class="two-column-list">
+                                    <ul class="content-list">
+                                        <li>Fraudulent or deceptive practices</li>
+                                        <li>Violating any applicable laws or regulations</li>
+                                        <li>Harassing or threatening other users</li>
+                                        <li>Uploading malicious software or code</li>
+                                    </ul>
+                                    <ul class="content-list">
+                                        <li>Attempting to gain unauthorized access</li>
+                                        <li>Scraping or data mining activities</li>
+                                        <li>Impersonating another person or entity</li>
+                                        <li>Interfering with service functionality</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Section 5 -->
+                        <section id="section-5" class="terms-section">
+                            <h2 class="section-title">
+                                <span class="section-number">5</span>
+                                Purchases and Payment
+                            </h2>
+                            <div class="section-content">
+                                <p>When you make a purchase through our service, you agree to the following terms:</p>
+                                <div class="info-box">
+                                    <h3 class="info-box-title">Payment Processing</h3>
+                                    <ul class="content-list">
+                                        <li>All payments are processed securely through our payment partners</li>
+                                        <li>We accept major credit cards, PayPal, and other approved payment methods</li>
+                                        <li>Payment must be received before order processing begins</li>
+                                        <li>You are responsible for all charges incurred on your account</li>
+                                    </ul>
+                                </div>
+                                <div class="info-box">
+                                    <h3 class="info-box-title">Order Fulfillment</h3>
+                                    <ul class="content-list">
+                                        <li>Orders are processed within 1-2 business days</li>
+                                        <li>Shipping times vary by location and shipping method selected</li>
+                                        <li>You will receive tracking information once your order ships</li>
+                                        <li>We reserve the right to cancel orders due to inventory limitations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Section 6 -->
+                        <section id="section-6" class="terms-section">
+                            <h2 class="section-title">
+                                <span class="section-number">6</span>
+                                Return and Refund Policy
+                            </h2>
+                            <div class="section-content">
+                                <p>We want you to be completely satisfied with your purchase. Our return policy includes:</p>
+                                <div class="two-column-info">
+                                    <div class="info-box return-box">
+                                        <h3 class="info-box-title">Return Eligibility</h3>
+                                        <ul class="content-list">
+                                            <li>Items must be returned within 30 days of purchase</li>
+                                            <li>Products must be in original condition and packaging</li>
+                                            <li>Return authorization required for all returns</li>
+                                            <li>Customer is responsible for return shipping costs</li>
+                                        </ul>
+                                    </div>
+                                    <div class="info-box refund-box">
+                                        <h3 class="info-box-title">Refund Processing</h3>
+                                        <ul class="content-list">
+                                            <li>Refunds processed within 5-7 business days</li>
+                                            <li>Original payment method will be credited</li>
+                                            <li>Shipping charges are non-refundable</li>
+                                            <li>Damaged or defective items eligible for full refund</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Section 7 -->
+                        <section id="section-7" class="terms-section">
+                            <h2 class="section-title">
+                                <span class="section-number">7</span>
+                                Privacy Policy
+                            </h2>
+                            <div class="section-content">
+                                <p>Your privacy is important to us. Our Privacy Policy explains how we collect, use, and protect your information when you use our service.</p>
+                                <div class="info-box privacy-box">
+                                    <h3 class="info-box-title">Data Collection and Use</h3>
+                                    <ul class="content-list">
+                                        <li>We collect information you provide directly to us</li>
+                                        <li>We use cookies and similar technologies to enhance your experience</li>
+                                        <li>Your personal information is used to process orders and provide customer service</li>
+                                        <li>We do not sell or rent your personal information to third parties</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Section 8 -->
+                        <section id="section-8" class="terms-section">
+                            <h2 class="section-title">
+                                <span class="section-number">8</span>
+                                Termination
+                            </h2>
+                            <div class="section-content">
+                                <p>We may terminate or suspend your account and bar access to the service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of the Terms.</p>
+                                <p>If you wish to terminate your account, you may simply discontinue using the service.</p>
+                            </div>
+                        </section>
+
+                        <!-- Section 9 -->
+                        <section id="section-9" class="terms-section">
+                            <h2 class="section-title">
+                                <span class="section-number">9</span>
+                                Disclaimer
+                            </h2>
+                            <div class="section-content">
+                                <p>The information on this website is provided on an "as is" basis. To the fullest extent permitted by law, this Company:</p>
+                                <ul class="content-list">
+                                    <li>Excludes all representations and warranties relating to this website and its contents</li>
+                                    <li>Makes no warranties regarding the accuracy, completeness, or reliability of the information</li>
+                                    <li>Does not guarantee that the service will be available at all times</li>
+                                    <li>Reserves the right to modify or discontinue the service at any time</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <!-- Section 10 -->
+                        <section id="section-10" class="terms-section">
+                            <h2 class="section-title">
+                                <span class="section-number">10</span>
+                                Limitation of Liability
+                            </h2>
+                            <div class="section-content">
+                                <p>In no event shall E-Commerce Store, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your use of the service.</p>
+                                <div class="info-box liability-box">
+                                    <h3 class="info-box-title">Limitation Scope</h3>
+                                    <ul class="content-list">
+                                        <li>Maximum liability limited to the amount paid for the service</li>
+                                        <li>No liability for third-party actions or content</li>
+                                        <li>Exclusion of consequential and indirect damages</li>
+                                        <li>Some jurisdictions do not allow these limitations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Section 11 -->
+                        <section id="section-11" class="terms-section">
+                            <h2 class="section-title">
+                                <span class="section-number">11</span>
+                                Governing Law
+                            </h2>
+                            <div class="section-content">
+                                <p>These Terms shall be interpreted and governed by the laws of the State of [Your State], without regard to its conflict of law provisions.</p>
+                                <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.</p>
+                                <div class="info-box legal-box">
+                                    <h3 class="info-box-title">Dispute Resolution</h3>
+                                    <ul class="content-list">
+                                        <li>Any disputes will be resolved through binding arbitration</li>
+                                        <li>Class action lawsuits are waived</li>
+                                        <li>Local courts have jurisdiction for enforcement</li>
+                                        <li>Mediation encouraged before formal proceedings</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Section 12 -->
+                        <section id="section-12" class="terms-section">
+                            <h2 class="section-title">
+                                <span class="section-number">12</span>
+                                Contact Information
+                            </h2>
+                            <div class="section-content">
+                                <p>If you have any questions about these Terms and Conditions, please contact us at:</p>
+                                <div class="contact-info">
+                                    <div class="contact-item">
+                                        <strong>Email:</strong> support@ecommercestore.com
+                                    </div>
+                                    <div class="contact-item">
+                                        <strong>Phone:</strong> +1 (555) 123-4567
+                                    </div>
+                                    <div class="contact-item">
+                                        <strong>Address:</strong> 123 Commerce Street, Business City, BC 12345
+                                    </div>
+                                    <div class="contact-item">
+                                        <strong>Business Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM EST
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('active');
+        }
+
+        // Smooth scrolling to sections
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                const offsetTop = element.offsetTop - 100;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+            // Close mobile menu if open
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.remove('active');
+        }
+
+        // Back to top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide back to top button and highlight current section
+        window.addEventListener('scroll', function() {
+            const backToTopBtn = document.getElementById('backToTop');
+            
+            // Show/hide back to top button
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+
+            // Highlight current section in TOC
+            const sections = document.querySelectorAll('.terms-section');
+            const tocLinks = document.querySelectorAll('.toc-link');
+            
+            let currentSection = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionBottom) {
+                    currentSection = section.id;
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+</body>
+
+</html>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Logo and Description -->
+                <div class="footer-section">
+                    <h3 class="footer-logo">SLAY</h3>
+                    <p class="footer-description">
+                        Premium fashion for the modern lifestyle. Quality clothing that makes a statement.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link" data-page="shop">New Arrivals</a></li>
+                        <li><a href="index.html" class="footer-link" data-page="shop">Collections</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html" class="footer-link" data-page="about"
+                                data-target="#contact-us">Contact Us</a></li>
+                        <li><a href="privacy.html" class="footer-link" data-page="about"
+                                data-target="#privacy">Privacy</a></li>
+                        <li><a href="terms.html" class="footer-link" data-page="about"
+                                data-target="#terms">Terms</a></li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link" data-page="about">About</a></li>
+                      
+                        <li><a href="teams.html" class="footer-link" data-page="about"
+                                data-target="#team">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 SLAY. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

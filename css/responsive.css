@@ -1,0 +1,1785 @@
+/* ====================================
+   ShopMart E-commerce CSS
+   Responsive Styles
+==================================== */
+
+/* Large Tablets and Small Laptops */
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Header */
+    .header-content {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .nav {
+        order: 3;
+        width: 100%;
+    }
+    
+    .nav-list {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    
+    .search-input {
+        width: 250px;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    /* Categories */
+    .categories-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .category-card {
+        padding: 1.5rem;
+    }
+    
+    /* Products */
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    /* Catalog */
+    .catalog-layout {
+        grid-template-columns: 200px 1fr;
+        gap: 1.5rem;
+    }
+    
+    .filters-sidebar {
+        padding: 1rem;
+    }
+    
+    .products-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+    
+    .results-info {
+        text-align: center;
+    }
+    
+    .sort-options {
+        justify-content: center;
+    }
+    
+    .view-options {
+        justify-content: center;
+    }
+    
+    /* Product Details */
+    .product-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .image-thumbnails {
+        justify-content: center;
+    }
+    
+    .product-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    /* Cart */
+    .cart-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .cart-item {
+        grid-template-columns: 80px 1fr;
+        gap: 1rem;
+    }
+    
+    .item-quantity,
+    .item-price,
+    .item-actions {
+        grid-column: 1 / -1;
+        margin-top: 0.5rem;
+    }
+    
+    .item-quantity {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .item-price {
+        text-align: left;
+    }
+    
+    .item-actions {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    /* Checkout */
+    .checkout-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .order-summary {
+        position: static;
+        order: -1;
+    }
+    
+    .progress-steps {
+        gap: 2rem;
+    }
+    
+    /* About */
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    /* Contact */
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-methods {
+        gap: 1.5rem;
+    }
+    
+    .faq-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    /* Typography */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    /* Header */
+    .header-content {
+        position: relative;
+    }
+    
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 8px 8px;
+        z-index: 1000;
+    }
+    
+    .nav.active {
+        display: block;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 0;
+    }
+    
+    .nav-link {
+        padding: 1rem 0;
+        border-bottom: 1px solid #f8f9fa;
+    }
+    
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .search-bar {
+        order: 3;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .search-input {
+        width: 100%;
+    }
+    
+    /* Hero */
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Categories */
+    .categories {
+        padding: 2rem 0;
+    }
+    
+    .categories-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+    
+    .category-card {
+        padding: 1rem;
+    }
+    
+    .category-icon {
+        font-size: 2rem;
+    }
+    
+    /* Products */
+    .featured-products {
+        padding: 2rem 0;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+    }
+    
+    .product-image img {
+        height: 200px;
+    }
+    
+    .product-info {
+        padding: 1rem;
+    }
+    
+    /* Newsletter */
+    .newsletter {
+        padding: 2rem 0;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+        max-width: 300px;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    /* Catalog */
+    .catalog-layout {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .filters-sidebar {
+        position: static;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+    
+    .products-header {
+        gap: 0.5rem;
+    }
+    
+    .products-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .sort-options {
+        flex-wrap: wrap;
+    }
+    
+    .sort-options select {
+        min-width: 150px;
+    }
+    
+    /* Product Details */
+    .product-details {
+        padding: 1rem 0;
+    }
+    
+    .main-image img {
+        height: 300px;
+    }
+    
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .product-info .product-title {
+        font-size: 1.5rem;
+    }
+    
+    .current-price {
+        font-size: 1.5rem;
+    }
+    
+    .quantity-section {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+    
+    .quantity-controls {
+        align-self: flex-start;
+    }
+    
+    .product-features {
+        padding-top: 1rem;
+    }
+    
+    .feature {
+        align-items: flex-start;
+    }
+    
+    .feature i {
+        margin-top: 0.25rem;
+    }
+    
+    /* Product Tabs */
+    .product-tabs {
+        margin-top: 2rem;
+        padding-top: 1rem;
+    }
+    
+    .tabs-nav {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .tab-btn {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .spec-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .reviews-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+    
+    .rating-summary {
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    /* Cart */
+    .cart-container {
+        padding: 1rem 0;
+    }
+    
+    .cart-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+        text-align: center;
+    }
+    
+    .cart-item {
+        grid-template-columns: 60px 1fr;
+        gap: 0.5rem;
+        padding: 1rem 0;
+    }
+    
+    .item-image {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .item-details h3 {
+        font-size: 1rem;
+    }
+    
+    .item-quantity {
+        justify-content: flex-start;
+    }
+    
+    .item-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .promo-code {
+        flex-direction: column;
+    }
+    
+    .shipping-benefit {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    /* Checkout */
+    .checkout-container {
+        padding: 1rem 0;
+    }
+    
+    .checkout-progress {
+        padding: 1rem 0;
+    }
+    
+    .progress-steps {
+        gap: 1rem;
+    }
+    
+    .step {
+        gap: 0.25rem;
+    }
+    
+    .step-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .step span {
+        font-size: 0.8rem;
+    }
+    
+    .checkout-form {
+        padding: 1rem;
+    }
+    
+    .form-section {
+        padding-bottom: 1rem;
+    }
+    
+    .form-section h2 {
+        font-size: 1.25rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .shipping-option {
+        padding: 0.75rem;
+    }
+    
+    .payment-method {
+        padding: 0.75rem;
+    }
+    
+    .card-details {
+        padding: 1rem;
+    }
+    
+    .order-summary {
+        padding: 1rem;
+    }
+    
+    .order-item {
+        gap: 0.5rem;
+    }
+    
+    .order-item .item-image {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .order-item .item-details h4 {
+        font-size: 0.9rem;
+    }
+    
+    .order-item .item-details p {
+        font-size: 0.8rem;
+    }
+    
+    /* About */
+    .about-hero {
+        padding: 2rem 0;
+    }
+    
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .about-hero p {
+        font-size: 1rem;
+    }
+    
+    .about-content {
+        padding: 2rem 0;
+    }
+    
+    .content-text p {
+        font-size: 1rem;
+    }
+    
+    .values-section {
+        padding: 2rem 0;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .value-card {
+        padding: 1.5rem;
+    }
+    
+    .value-icon {
+        font-size: 2rem;
+    }
+    
+    .team-section {
+        padding: 2rem 0;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .team-member {
+        padding: 1.5rem;
+    }
+    
+    .member-photo {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+    
+    .stats-section {
+        padding: 2rem 0;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .mission-section {
+        padding: 2rem 0;
+    }
+    
+    .mission-content p {
+        font-size: 1rem;
+    }
+    
+    .mission-points {
+        gap: 0.75rem;
+    }
+    
+    .mission-point {
+        max-width: 100%;
+        justify-content: center;
+    }
+    
+    /* Contact */
+    .contact-hero {
+        padding: 2rem 0;
+    }
+    
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-hero p {
+        font-size: 1rem;
+    }
+    
+    .contact-content {
+        padding: 2rem 0;
+    }
+    
+    .contact-form {
+        padding: 1rem;
+    }
+    
+    .contact-form h2 {
+        font-size: 1.25rem;
+    }
+    
+    .contact-method {
+        gap: 0.75rem;
+    }
+    
+    .method-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .business-hours {
+        padding: 1rem;
+    }
+    
+    .faq-section {
+        padding: 2rem 0;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-item {
+        padding: 1.5rem;
+    }
+}
+
+/* Large Mobile Phones */
+@media screen and (max-width: 576px) {
+    /* Container */
+    .container {
+        padding: 0 10px;
+    }
+    
+    /* Typography */
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    /* Buttons */
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    /* Header */
+    .header-content {
+        padding: 0.75rem 0;
+    }
+    
+    .logo {
+        font-size: 1.25rem;
+    }
+    
+    .logo img {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .cart-btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .cart-count {
+        font-size: 0.7rem;
+        padding: 1px 4px;
+        min-width: 16px;
+    }
+    
+    /* Hero */
+    .hero {
+        padding: 1.5rem 0;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    /* Categories */
+    .categories {
+        padding: 1.5rem 0;
+    }
+    
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+    
+    .category-card {
+        padding: 0.75rem;
+    }
+    
+    .category-card h3 {
+        font-size: 1rem;
+    }
+    
+    .category-card p {
+        font-size: 0.8rem;
+    }
+    
+    /* Products */
+    .featured-products {
+        padding: 1.5rem 0;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+    
+    .product-image img {
+        height: 150px;
+    }
+    
+    .product-info {
+        padding: 0.75rem;
+    }
+    
+    .product-title {
+        font-size: 1rem;
+    }
+    
+    .product-price {
+        font-size: 1.25rem;
+    }
+    
+    .product-rating {
+        font-size: 0.8rem;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+    
+    /* Newsletter */
+    .newsletter {
+        padding: 1.5rem 0;
+    }
+    
+    .newsletter-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .newsletter-content p {
+        font-size: 0.9rem;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 1.5rem 0 0.75rem;
+    }
+    
+    .footer-content {
+        gap: 1rem;
+    }
+    
+    .footer-logo {
+        font-size: 1.25rem;
+    }
+    
+    .footer-logo img {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .footer-section p {
+        font-size: 0.9rem;
+    }
+    
+    .footer-section ul li {
+        font-size: 0.9rem;
+    }
+    
+    .social-links a {
+        font-size: 1.25rem;
+    }
+    
+    .footer-bottom {
+        padding-top: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Catalog */
+    .filters-sidebar {
+        max-height: 250px;
+        padding: 0.75rem;
+    }
+    
+    .filter-group {
+        margin-bottom: 1rem;
+    }
+    
+    .filter-group h4 {
+        font-size: 0.9rem;
+    }
+    
+    .filter-option {
+        font-size: 0.8rem;
+    }
+    
+    .products-section {
+        padding: 1rem;
+    }
+    
+    .products-header h2 {
+        font-size: 1.25rem;
+    }
+    
+    .sort-options {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .sort-options select {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    /* Product Details */
+    .main-image img {
+        height: 250px;
+    }
+    
+    .thumbnail {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .product-info .product-title {
+        font-size: 1.25rem;
+    }
+    
+    .current-price {
+        font-size: 1.25rem;
+    }
+    
+    .product-description p {
+        font-size: 0.9rem;
+    }
+    
+    .color-option {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .quantity-controls input {
+        width: 50px;
+        padding: 6px 8px;
+    }
+    
+    .quantity-btn {
+        padding: 6px 10px;
+    }
+    
+    .feature i {
+        font-size: 1.25rem;
+    }
+    
+    /* Product Tabs */
+    .tabs-nav {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .tab-btn {
+        padding: 0.75rem;
+        border-bottom: 1px solid #e9ecef;
+        border-radius: 0;
+    }
+    
+    .tab-btn:last-child {
+        border-bottom: none;
+    }
+    
+    .tab-content {
+        font-size: 0.9rem;
+    }
+    
+    .reviews-header {
+        gap: 0.75rem;
+    }
+    
+    .rating-summary {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .reviewer-info {
+        gap: 0.75rem;
+    }
+    
+    .reviewer-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+    
+    /* Cart */
+    .cart-item {
+        grid-template-columns: 50px 1fr;
+        padding: 0.75rem 0;
+    }
+    
+    .item-image {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .item-details h3 {
+        font-size: 0.9rem;
+    }
+    
+    .item-options {
+        font-size: 0.8rem;
+    }
+    
+    .item-rating {
+        font-size: 0.7rem;
+    }
+    
+    .item-price .price {
+        font-size: 1rem;
+    }
+    
+    .item-actions .action-btn {
+        font-size: 0.7rem;
+    }
+    
+    .summary-card {
+        padding: 1rem;
+    }
+    
+    .summary-row {
+        font-size: 0.9rem;
+    }
+    
+    .summary-row.total {
+        font-size: 1.1rem;
+    }
+    
+    .promo-input {
+        font-size: 0.9rem;
+    }
+    
+    .shipping-benefit {
+        gap: 0.5rem;
+    }
+    
+    .shipping-benefit i {
+        font-size: 1.25rem;
+    }
+    
+    .shipping-benefit strong {
+        font-size: 0.9rem;
+    }
+    
+    .shipping-benefit p {
+        font-size: 0.8rem;
+    }
+    
+    /* Checkout */
+    .checkout-progress {
+        padding: 0.75rem 0;
+    }
+    
+    .progress-steps {
+        gap: 0.75rem;
+    }
+    
+    .step-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    
+    .step span {
+        font-size: 0.75rem;
+    }
+    
+    .checkout-form {
+        padding: 0.75rem;
+    }
+    
+    .form-section h2 {
+        font-size: 1.1rem;
+    }
+    
+    .form-group label {
+        font-size: 0.9rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    
+    .shipping-option {
+        padding: 0.5rem;
+    }
+    
+    .option-details strong {
+        font-size: 0.9rem;
+    }
+    
+    .option-details p {
+        font-size: 0.8rem;
+    }
+    
+    .option-price {
+        font-size: 0.9rem;
+    }
+    
+    .payment-method {
+        padding: 0.5rem;
+    }
+    
+    .payment-method label {
+        font-size: 0.9rem;
+    }
+    
+    .card-details {
+        padding: 0.75rem;
+    }
+    
+    .order-summary {
+        padding: 0.75rem;
+    }
+    
+    .order-item .item-image {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .order-item .item-details h4 {
+        font-size: 0.8rem;
+    }
+    
+    .order-item .item-details p {
+        font-size: 0.7rem;
+    }
+    
+    .order-item .item-price {
+        font-size: 0.9rem;
+    }
+    
+    .payment-icons i {
+        font-size: 1.5rem;
+    }
+    
+    /* About */
+    .about-hero h1 {
+        font-size: 1.75rem;
+    }
+    
+    .about-hero p {
+        font-size: 0.9rem;
+    }
+    
+    .content-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content-text p {
+        font-size: 0.9rem;
+    }
+    
+    .value-card {
+        padding: 1rem;
+    }
+    
+    .value-icon {
+        font-size: 1.75rem;
+    }
+    
+    .value-card h3 {
+        font-size: 1rem;
+    }
+    
+    .value-card p {
+        font-size: 0.9rem;
+    }
+    
+    .team-member {
+        padding: 1rem;
+    }
+    
+    .member-photo {
+        width: 70px;
+        height: 70px;
+        font-size: 1.75rem;
+    }
+    
+    .member-info h3 {
+        font-size: 1rem;
+    }
+    
+    .member-info p {
+        font-size: 0.9rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 1.75rem;
+    }
+    
+    .stat-label {
+        font-size: 1rem;
+    }
+    
+    .mission-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .mission-content p {
+        font-size: 0.9rem;
+    }
+    
+    .mission-point {
+        gap: 0.75rem;
+    }
+    
+    .mission-point span {
+        font-size: 0.9rem;
+    }
+    
+    /* Contact */
+    .contact-hero h1 {
+        font-size: 1.75rem;
+    }
+    
+    .contact-hero p {
+        font-size: 0.9rem;
+    }
+    
+    .contact-form h2 {
+        font-size: 1.1rem;
+    }
+    
+    .contact-info h2 {
+        font-size: 1.25rem;
+    }
+    
+    .contact-method {
+        gap: 0.5rem;
+    }
+    
+    .method-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    
+    .method-details h3 {
+        font-size: 1rem;
+    }
+    
+    .method-details p {
+        font-size: 0.8rem;
+    }
+    
+    .business-hours {
+        padding: 0.75rem;
+    }
+    
+    .business-hours h3 {
+        font-size: 1rem;
+    }
+    
+    .hours-item {
+        font-size: 0.9rem;
+    }
+    
+    .faq-item {
+        padding: 1rem;
+    }
+    
+    .faq-item h3 {
+        font-size: 1rem;
+    }
+    
+    .faq-item p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small Mobile Phones */
+@media screen and (max-width: 360px) {
+    /* Container */
+    .container {
+        padding: 0 8px;
+    }
+    
+    /* Typography */
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    /* Header */
+    .logo {
+        font-size: 1.1rem;
+    }
+    
+    .logo img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .cart-btn {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.85rem;
+    }
+    
+    /* Categories */
+    .categories-grid {
+        gap: 0.5rem;
+    }
+    
+    .category-card {
+        padding: 0.5rem;
+    }
+    
+    .category-icon {
+        font-size: 1.5rem;
+    }
+    
+    .category-card h3 {
+        font-size: 0.9rem;
+    }
+    
+    .category-card p {
+        font-size: 0.75rem;
+    }
+    
+    /* Products */
+    .products-grid {
+        gap: 0.5rem;
+    }
+    
+    .product-image img {
+        height: 120px;
+    }
+    
+    .product-info {
+        padding: 0.5rem;
+    }
+    
+    .product-title {
+        font-size: 0.9rem;
+    }
+    
+    .product-price {
+        font-size: 1.1rem;
+    }
+    
+    .product-rating {
+        font-size: 0.7rem;
+    }
+    
+    .btn {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+    
+    /* Newsletter */
+    .newsletter-content h2 {
+        font-size: 1.25rem;
+    }
+    
+    .newsletter-content p {
+        font-size: 0.85rem;
+    }
+    
+    /* Footer */
+    .footer-logo {
+        font-size: 1.1rem;
+    }
+    
+    .footer-logo img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .footer-section p {
+        font-size: 0.85rem;
+    }
+    
+    .footer-section ul li {
+        font-size: 0.85rem;
+    }
+    
+    .social-links a {
+        font-size: 1.1rem;
+    }
+    
+    .footer-bottom {
+        font-size: 0.85rem;
+    }
+    
+    /* Product Details */
+    .main-image img {
+        height: 200px;
+    }
+    
+    .thumbnail {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .product-info .product-title {
+        font-size: 1.1rem;
+    }
+    
+    .current-price {
+        font-size: 1.1rem;
+    }
+    
+    .product-description p {
+        font-size: 0.85rem;
+    }
+    
+    .color-option {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .quantity-controls input {
+        width: 45px;
+        padding: 4px 6px;
+    }
+    
+    .quantity-btn {
+        padding: 4px 8px;
+    }
+    
+    /* Cart */
+    .cart-item {
+        grid-template-columns: 45px 1fr;
+        padding: 0.5rem 0;
+    }
+    
+    .item-image {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .item-details h3 {
+        font-size: 0.85rem;
+    }
+    
+    .item-options {
+        font-size: 0.75rem;
+    }
+    
+    .item-rating {
+        font-size: 0.65rem;
+    }
+    
+    .item-price .price {
+        font-size: 0.9rem;
+    }
+    
+    .item-actions .action-btn {
+        font-size: 0.65rem;
+    }
+    
+    .summary-card {
+        padding: 0.75rem;
+    }
+    
+    .summary-row {
+        font-size: 0.85rem;
+    }
+    
+    .summary-row.total {
+        font-size: 1rem;
+    }
+    
+    /* Checkout */
+    .step-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    
+    .step span {
+        font-size: 0.7rem;
+    }
+    
+    .checkout-form {
+        padding: 0.5rem;
+    }
+    
+    .form-section h2 {
+        font-size: 1rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.85rem;
+        padding: 6px;
+    }
+    
+    .shipping-option {
+        padding: 0.4rem;
+    }
+    
+    .option-details strong {
+        font-size: 0.85rem;
+    }
+    
+    .option-details p {
+        font-size: 0.75rem;
+    }
+    
+    .option-price {
+        font-size: 0.85rem;
+    }
+    
+    .payment-method {
+        padding: 0.4rem;
+    }
+    
+    .payment-method label {
+        font-size: 0.85rem;
+    }
+    
+    .card-details {
+        padding: 0.5rem;
+    }
+    
+    .order-summary {
+        padding: 0.5rem;
+    }
+    
+    .order-item .item-image {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .order-item .item-details h4 {
+        font-size: 0.75rem;
+    }
+    
+    .order-item .item-details p {
+        font-size: 0.65rem;
+    }
+    
+    .order-item .item-price {
+        font-size: 0.85rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .footer,
+    .breadcrumb,
+    .mobile-menu-toggle,
+    .search-bar,
+    .cart-btn,
+    .btn,
+    .newsletter,
+    .social-links,
+    .action-btn,
+    .product-actions,
+    .checkout-progress,
+    .navigation {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000;
+        background: #fff;
+    }
+    
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: #000;
+        page-break-after: avoid;
+    }
+    
+    .product-card,
+    .cart-item,
+    .order-item,
+    .review-item {
+        page-break-inside: avoid;
+        border: 1px solid #ccc;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+    
+    .product-image img,
+    .item-image img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+    
+    .price,
+    .current-price {
+        font-weight: bold;
+    }
+    
+    .page-title {
+        border-bottom: 2px solid #000;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .summary-row {
+        border-bottom: 1px solid #ccc;
+        padding: 0.25rem 0;
+    }
+    
+    .summary-row.total {
+        border-bottom: 2px solid #000;
+        font-weight: bold;
+    }
+    
+    .tab-content {
+        page-break-inside: avoid;
+    }
+    
+    .form-group {
+        margin-bottom: 0.5rem;
+    }
+    
+    .form-group label {
+        font-weight: bold;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        border: 1px solid #ccc;
+        padding: 0.25rem;
+    }
+}
+
+/* High DPI Displays */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min--moz-device-pixel-ratio: 2),
+       only screen and (-o-min-device-pixel-ratio: 2/1),
+       only screen and (min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi),
+       only screen and (min-resolution: 2dppx) {
+    
+    .logo img,
+    .footer-logo img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+    
+    .product-image img,
+    .item-image img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    /* This is a placeholder for dark mode styles */
+    /* In a real implementation, you would add dark mode colors here */
+    /* For now, we'll keep the light theme as default */
+}
+
+/* Landscape Orientation on Mobile */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding: 1rem 0;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .categories,
+    .featured-products,
+    .newsletter,
+    .about-content,
+    .contact-content {
+        padding: 1rem 0;
+    }
+    
+    .main-image img {
+        height: 200px;
+    }
+    
+    .modal-content {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+}
+
+/* Accessibility - Focus Styles */
+@media (prefers-reduced-motion: no-preference) {
+    .btn:focus,
+    .nav-link:focus,
+    .cart-btn:focus,
+    .search-btn:focus,
+    .mobile-menu-toggle:focus,
+    .tab-btn:focus,
+    .pagination-btn:focus,
+    .view-btn:focus,
+    .quantity-btn:focus,
+    .action-btn:focus,
+    .color-option:focus,
+    .thumbnail:focus,
+    .filter-option:focus,
+    .shipping-option:focus,
+    .payment-method:focus {
+        outline: 2px solid #007bff;
+        outline-offset: 2px;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .product-card,
+    .category-card,
+    .value-card,
+    .team-member,
+    .faq-item,
+    .btn,
+    .nav-link,
+    .cart-btn,
+    .search-btn,
+    .mobile-menu-toggle,
+    .tab-btn,
+    .pagination-btn,
+    .view-btn,
+    .quantity-btn,
+    .action-btn,
+    .color-option,
+    .thumbnail,
+    .filter-option,
+    .shipping-option,
+    .payment-method {
+        transition: none !important;
+        animation: none !important;
+    }
+    
+    .product-card:hover,
+    .category-card:hover,
+    .value-card:hover,
+    .team-member:hover,
+    .faq-item:hover {
+        transform: none !important;
+    }
+    
+    .product-image img {
+        transition: none !important;
+    }
+    
+    .product-card:hover .product-image img {
+        transform: none !important;
+    }
+}

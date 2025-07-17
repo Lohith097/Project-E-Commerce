@@ -914,7 +914,7 @@ body {
 .footer {
     background-color: #000000;
     color: white;
-    margin-top: 4rem;
+    margin-top: 0;
 }
 
 .footer-container {
@@ -1009,7 +1009,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #00bb77 10%, black 90%);
     padding: 20px;
 }
 
@@ -2954,4 +2954,29 @@ body {
     .reviews-breakdown {
         max-width: 32rem;
     }
+}
+
+.heading_234{
+    font-size: 45px;
+    font-weight: 700;
+    color: #00BB77;
+    text-align-last:center;
+}
+.common_text{
+    font-size: 25px;
+    color: black;
+    padding-left: 20px;
+    padding-right: 10px;;
+    font-family: 'Times New Roman', Times, serif;
+}
+.point{
+    font-size:35px;
+    color: #00BB77;
+}
+.sub_point{
+    font-style: italic;
+}
+.minpoint{
+    color: red;
+    font-size: 30px;
 }
