@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SLAY Fashion Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo-section">
+                    <button id="logo-btn" class="logo" onclick="window.location.href='index.html'">SLAY</button>
+                </div>
+
+                <!-- Search Bar - Desktop -->
+                <div class="search-section">
+                    <div class="search-container">
+                        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                        <input type="text" id="search-input" placeholder="Search products..." class="search-input">
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <button class="nav-btn" onclick="window.location.href='index.html'">Home</button>
+                   </nav>
+
+                <!-- Right Side Icons -->
+              
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu hidden">
+                <!-- Mobile Search -->
+                <div class="mobile-search">
+                    <div class="search-container">
+                        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                        <input type="text" placeholder="Search products..." class="search-input">
+                    </div>
+                </div>
+
+                <!-- Mobile Navigation Links -->
+                <div class="mobile-nav">
+                    <button class="mobile-nav-btn" data-page="home">Home</button>
+                    <button class="mobile-nav-btn" data-page="shop">Shop</button>
+                    <button class="mobile-nav-btn" data-page="categories">Categories</button>
+                    <button class="mobile-nav-btn" data-page="wishlist">Wishlist</button>
+                    <button id="mobile-user-btn" class="mobile-nav-btn">Login / Sign Up</button>
+                    <button class="mobile-nav-btn sale-btn" data-page="sale">SALE</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Privacy Policy - SLAY</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="auth-page">
+            <div class="auth-container" style="max-width: 800px;">
+                <div class="auth-header">
+                    <button class="logo" onclick="window.location.href='index.html'">SLAY</button>
+                </div>
+
+                <div class="auth-form-container" style="padding: 40px;">
+                    <div class="privacy-policy">
+                        <h1 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem; color: #111827;">Privacy
+                            Policy</h1>
+                        <p style="color: #6B7280; margin-bottom: 2rem; font-size: 0.875rem;">Last updated: December 2024
+                        </p>
+
+                        <div class="policy-content" style="line-height: 1.6; color: #374151;">
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #111827;">
+                                    1. Information We Collect</h2>
+                                <p style="margin-bottom: 1rem;">We collect information you provide directly to us, such
+                                    as when you:</p>
+                                <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                                    <li>Create an account</li>
+                                    <li>Make a purchase</li>
+                                    <li>Sign up for our newsletter</li>
+                                    <li>Contact us for customer support</li>
+                                    <li>Participate in surveys or promotions</li>
+                                </ul>
+                                <p>This information may include your name, email address, phone number, shipping
+                                    address, billing address, and payment information.</p>
+                            </section>
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #111827;">
+                                    2. How We Use Your Information</h2>
+                                <p style="margin-bottom: 1rem;">We use the information we collect to:</p>
+                                <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                                    <li>Process and fulfill your orders</li>
+                                    <li>Communicate with you about your orders and account</li>
+                                    <li>Send you marketing communications (with your consent)</li>
+                                    <li>Improve our products and services</li>
+                                    <li>Protect against fraud and unauthorized transactions</li>
+                                    <li>Comply with legal obligations</li>
+                                </ul>
+                            </section>
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #111827;">
+                                    3. Information Sharing</h2>
+                                <p style="margin-bottom: 1rem;">We do not sell, trade, or otherwise transfer your
+                                    personal information to third parties except in the following circumstances:</p>
+                                <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                                    <li><strong>Service Providers:</strong> We share information with trusted third
+                                        parties who assist us in operating our website and conducting our business</li>
+                                    <li><strong>Legal Requirements:</strong> We may disclose information when required
+                                        by law or to protect our rights</li>
+                                    <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or
+                                        sale of assets</li>
+                                </ul>
+                            </section>
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #111827;">
+                                    4. Data Security</h2>
+                                <p>We implement appropriate security measures to protect your personal information
+                                    against unauthorized access, alteration, disclosure, or destruction. However, no
+                                    method of transmission over the internet is 100% secure, and we cannot guarantee
+                                    absolute security.</p>
+                            </section>
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #111827;">
+                                    5. Cookies and Tracking</h2>
+                                <p style="margin-bottom: 1rem;">We use cookies and similar tracking technologies to:</p>
+                                <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                                    <li>Remember your preferences and settings</li>
+                                    <li>Analyze website traffic and usage patterns</li>
+                                    <li>Personalize your shopping experience</li>
+                                    <li>Provide targeted advertising</li>
+                                </ul>
+                                <p>You can control cookie settings through your browser preferences.</p>
+                            </section>
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #111827;">
+                                    6. Your Rights</h2>
+                                <p style="margin-bottom: 1rem;">Depending on your location, you may have the following
+                                    rights regarding your personal information:</p>
+                                <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                                    <li>Access and receive a copy of your personal data</li>
+                                    <li>Rectify inaccurate personal data</li>
+                                    <li>Erase your personal data</li>
+                                    <li>Restrict or object to processing</li>
+                                    <li>Data portability</li>
+                                    <li>Withdraw consent at any time</li>
+                                </ul>
+                            </section>
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #111827;">
+                                    7. Third-Party Links</h2>
+                                <p>Our website may contain links to third-party websites. We are not responsible for the
+                                    privacy practices of these external sites. We encourage you to review their privacy
+                                    policies before providing any personal information.</p>
+                            </section>
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #111827;">
+                                    8. Children's Privacy</h2>
+                                <p>Our services are not intended for children under 13 years of age. We do not knowingly
+                                    collect personal information from children under 13. If you become aware that a
+                                    child has provided us with personal information, please contact us immediately.</p>
+                            </section>
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #111827;">
+                                    9. International Transfers</h2>
+                                <p>Your information may be transferred to and processed in countries other than your
+                                    own. We ensure that such transfers comply with applicable data protection laws and
+                                    provide adequate protection for your personal information.</p>
+                            </section>
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #111827;">
+                                    10. Changes to This Policy</h2>
+                                <p>We may update this privacy policy from time to time. We will notify you of any
+                                    changes by posting the new policy on this page and updating the "Last updated" date.
+                                    Your continued use of our services after any changes indicates your acceptance of
+                                    the updated policy.</p>
+                            </section>
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #111827;">
+                                    11. Contact Us</h2>
+                                <p style="margin-bottom: 1rem;">If you have any questions about this Privacy Policy or
+                                    our data practices, please contact us:</p>
+                                <div
+                                    style="background-color: #F9FAFB; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">
+                                    <p style="margin-bottom: 0.5rem;"><strong>Email:</strong> privacy@slay.com</p>
+                                    <p style="margin-bottom: 0.5rem;"><strong>Phone:</strong> 1-800-SLAY-HELP</p>
+                                    <p style="margin-bottom: 0.5rem;"><strong>Address:</strong> SLAY Fashion, 123
+                                        Fashion Street, Style City, SC 12345</p>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div
+                            style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #E5E7EB; text-align: center;">
+                            <button class="btn btn-primary" onclick="window.location.href='index.html'"
+                                style="background-color: #B6F500; color: #000000; padding: 0.75rem 1.5rem; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer; transition: background-color 0.3s ease;">
+                                Back to Shopping
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Logo and Description -->
+                <div class="footer-section">
+                    <h3 class="footer-logo">SLAY</h3>
+                    <p class="footer-description">
+                        Premium fashion for the modern lifestyle. Quality clothing that makes a statement.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link" data-page="shop">New Arrivals</a></li>
+                        <li><a href="index.html" class="footer-link" data-page="shop">Collections</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html" class="footer-link" data-page="about"
+                                data-target="#contact-us">Contact Us</a></li>
+                        <li><a href="privacy.html" class="footer-link" data-page="about"
+                                data-target="#privacy">Privacy</a></li>
+                        <li><a href="terms.html" class="footer-link" data-page="about" data-target="#terms">Terms</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-section">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link" data-page="about">About</a></li>
+                        <li><a href="teams.html" class="footer-link" data-page="about" data-target="#team">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 SLAY. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

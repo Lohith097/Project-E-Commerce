@@ -65,6 +65,349 @@ const products = [
         isBestSeller: true
     },
     {
+        id: '7',
+        name: 'ultra softshirt',
+        price: 799,
+        originalPrice: 1200,
+        discount: 33,
+        rating: 3.1,
+        reviewCount: 197,
+        images: [
+            'https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg'],
+        colors: [
+            { name: 'Forest Green', value: '#228B22', image: 'https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800' },
+            { name: 'Navy Blue', value: '#000080', image: 'https://images.pexels.com/photos/1021693/pexels-photo-1021693.jpeg?auto=compress&cs=tinysrgb&w=800' }
+        ],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        category: 'tshirts',
+        description: 'Crafted from premium 100% organic cotton, this shirt combines comfort with sustainability.',
+        features: ['100% organic cotton fleece', 'Drawstring hood', 'Kangaroo pocket', 'Machine washable'],
+        inStock: true,
+        isBestSeller: true
+    },
+    {
+        id: '8',
+        name: 'highquality pure leather jacket',
+        price: 579,
+        originalPrice: 749,
+        discount: 22,
+        rating: 3.8,
+        reviewCount: 127,
+        images: [
+            'https://images.pexels.com/photos/747470/pexels-photo-747470.jpeg?_gl=1*1rrkfmi*_ga*MTUzNDYyNjg3NC4xNzUyMjI1MDgx*_ga_8JE65Q40S6*czE3NTI3NTkwMTUkbzIkZzEkdDE3NTI3NTk4MDMkajM3JGwwJGgw'
+        ],
+        colors: [
+            {
+                name: 'red', value: '#8b2222ff', image:
+                    'https://images.pexels.com/photos/747470/pexels-photo-747470.jpeg?_gl=1*1rrkfmi*_ga*MTUzNDYyNjg3NC4xNzUyMjI1MDgx*_ga_8JE65Q40S6*czE3NTI3NTkwMTUkbzIkZzEkdDE3NTI3NTk4MDMkajM3JGwwJGgw'
+            }],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        category: 'jackets',
+        description: 'Crafted from premium 100% organic leather, this jacket combines comfort with sustainability, no animals were harmed.',
+        features: ['100% organic cotton fleece', 'Drawstring hood', 'pure leather', 'maximum durability'],
+        inStock: true,
+        isBestSeller: true
+    },
+    {
+        id: '9',
+        name: 'any size fashion jeans',
+        price: 1400,
+        originalPrice: 1900,
+        discount: 26,
+        rating: 4.0,
+        reviewCount: 127,
+        images: [
+            'https://images.pexels.com/photos/1082528/pexels-photo-1082528.jpeg?_gl=1*1bilm0f*_ga*MTUzNDYyNjg3NC4xNzUyMjI1MDgx*_ga_8JE65Q40S6*czE3NTI3NTkwMTUkbzIkZzEkdDE3NTI3NTk5NzYkajQwJGwwJGgw'
+        ],
+        colors: [
+            {
+                name: 'navy blue', value: 'blue', image:
+                    'https://images.pexels.com/photos/1082528/pexels-photo-1082528.jpeg?_gl=1*1bilm0f*_ga*MTUzNDYyNjg3NC4xNzUyMjI1MDgx*_ga_8JE65Q40S6*czE3NTI3NTkwMTUkbzIkZzEkdDE3NTI3NTk5NzYkajQwJGwwJGgw'
+            },],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        category: 'jeans',
+        description: 'Crafted from premium 100% organic cotton, this jeans combines comfort with sustainability.',
+        features: ['100% organic cotton fleece', 'Drawstring hood', 'Kangaroo pocket', 'Machine washable'],
+        inStock: true,
+        isBestSeller: false
+    },
+    {
+        id: '10',
+        name: 'ultra quality Hoodie',
+        price: 1200,
+        originalPrice: 1700,
+        discount: 29,
+        rating: 3.7,
+        reviewCount: 127,
+        images: [
+            'https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg'
+        ],
+        colors: [
+{ name: 'yellow', value: '#c9da38ff', image: 'https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg' }
+        ],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        category: 'hoodies',
+        description: 'Crafted from premium 100% organic cotton, this hoodie combines comfort with sustainability.',
+        features: ['100% organic cotton fleece', 'Drawstring hood', 'Kangaroo pocket', 'Machine washable'],
+        inStock: true,
+        isBestSeller: true
+    },
+    {
+        id: '11',
+        name: 'Premium Cotton Hoodie',
+        price: 500,
+        originalPrice: 799,
+        discount: 37,
+        rating: 3.5,
+        reviewCount: 108,
+        images: [
+            'https://images.pexels.com/photos/31367060/pexels-photo-31367060.png'   ],
+        colors: [
+           { name: 'black', value: '#000000ff', image:'https://images.pexels.com/photos/31367060/pexels-photo-31367060.png' },
+           { name: 'brown', value: '#94884a7b', image:'https://images.pexels.com/photos/31367060/pexels-photo-31367060.png' },
+           { name: 'dark green', value: '#1a3926ff', image:'https://images.pexels.com/photos/31367060/pexels-photo-31367060.png' },
+           { name: 'grey', value: '#252525ff', image:'https://images.pexels.com/photos/31367060/pexels-photo-31367060.png' },
+        ],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        category: 'accessories',
+        description: 'just a good belt',
+        features: ['strecthy', 'thick fibers'],
+        inStock: true,
+        isBestSeller: true
+    },
+    {
+        id: '12',
+        name: 'pure leather long belt',
+        price: 749,
+        originalPrice: 999,
+        discount: 25,
+        rating: 4.0,
+        reviewCount: 127,
+        images: [
+            'https://images.pexels.com/photos/31367058/pexels-photo-31367058.jpeg?'
+        ],
+       
+        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        category: 'accessories',
+        description: 'pure leather belt!',
+        features: ['most reliable belt on the market', 'bestseller fo 2021'],
+        inStock: true,
+        isBestSeller: true
+    },
+    {
+        id: '13',
+        name: 'new brand t-shirt',
+        price: 300,
+        originalPrice: 500,
+        discount: 40,
+        rating: 3.8,
+        reviewCount: 127,
+        images: [
+           'https://images.pexels.com/photos/1484807/pexels-photo-1484807.jpeg'
+        ],
+        colors: [
+            { name: 'red', value: '#9a4848ff', image: 'https://images.pexels.com/photos/1484807/pexels-photo-1484807.jpeg' },
+              ],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        category: 'tshirts',
+        description: 'Crafted from premium 100% organic cotton, this shirt combines comfort with sustainability.',
+        features: ['100% rewashable','summer friendly'],
+        inStock: true,
+        isBestSeller: true
+    },
+    {
+        id: '14',
+        name: 'stylish shirt',
+        price: 500,
+        originalPrice: 700,
+        discount: 28,
+        rating: 3.5,
+        reviewCount: 127,
+        images: [
+            'https://images.pexels.com/photos/1232459/pexels-photo-1232459.jpeg'   ],
+        colors: [
+         { name: 'blue', value: '#000080', image: 'https://images.pexels.com/photos/1232459/pexels-photo-1232459.jpeg' }
+        ],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        category: 'tshirts',
+        description: 'comfort and style combined into one',
+        features: ['100% organic cotton fleece', 'Machine washable'],
+        inStock: true,
+        isBestSeller: true
+    },
+    {
+        id: '15',
+        name: 'nice and free flowing t-shirt',
+        price: 900,
+        originalPrice: 1300,
+        discount: 31,
+        rating: 2.8,
+        reviewCount: 27,
+        images: [
+            'https://images.pexels.com/photos/3775119/pexels-photo-3775119.jpeg'
+        ],
+        colors: [
+           { name: 'yellow', value: '#c2d33cff', image: 'https://images.pexels.com/photos/3775119/pexels-photo-3775119.jpeg' }
+        ],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        category: 'tshirts',
+        description: 't-shirt for your summer adventures',
+        features: ['100% organic cotton fleece', 'Machine washable'],
+        inStock: true,
+        isBestSeller: false
+    },
+    {
+        id: '16',
+        name: 'Premium Cotton Hoodie',
+        price: 1500,
+        originalPrice: 2000,
+        discount: 25,
+        rating: 4.8,
+        reviewCount: 107,
+        images: [
+            'https://images.pexels.com/photos/1192335/pexels-photo-1192335.jpeg'
+          ],
+        colors: [
+         { name: 'grey', value: '#343434ff', image: 'https://images.pexels.com/photos/1192335/pexels-photo-1192335.jpeg' }
+        ],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        category: 'hoodies',
+        description: 'Crafted from premium 100% organic cotton, this hoodie combines comfort with sustainability.',
+        features: ['100% organic cotton fleece', 'Drawstring hood', 'Kangaroo pocket', 'Machine washable'],
+        inStock: true,
+        isBestSeller: false
+    },
+    {
+        id: '17',
+        name: 'Premium Cotton Hoodie',
+        price: 1534,
+        originalPrice: 1800,
+        discount: 15,
+        rating: 4.8,
+        reviewCount: 127,
+        images: [
+                'https://images.pexels.com/photos/634785/pexels-photo-634785.jpeg'
+           ],
+        colors: [
+           { name: 'light grey', value: '#313131ff', image:'https://images.pexels.com/photos/634785/pexels-photo-634785.jpeg' }
+        ],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        category: 'hoodies',
+        description: 'Crafted from premium 100% organic cotton, this hoodie combines comfort with sustainability.',
+        features: ['100% organic cotton fleece', 'Drawstring hood', 'Kangaroo pocket', 'Machine washable'],
+        inStock: true,
+        isBestSeller: false
+    },
+    {
+        id: '18',
+        name: 't-shirt',
+        price: 600,
+        originalPrice: 800,
+        discount: 25,
+        rating: 2.8,
+        reviewCount: 127,
+        images: [
+        'https://images.pexels.com/photos/1261422/pexels-photo-1261422.jpeg'
+      ],
+        colors: [
+           { name: 'white', value: '#ffffffff', image:'https://images.pexels.com/photos/1261422/pexels-photo-1261422.jpeg' }
+        ],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        category: 'tshirts',
+        description: 'Crafted from premium 100% organic cotton, this t-shirt combines comfort with sustainability.',
+        features: ['100% organic cotton fleece', 'Drawstring hood', 'Kangaroo pocket', 'Machine washable'],
+        inStock: true,
+        isBestSeller: true
+    },
+    {
+        id: '19',
+        name: 'winter times jacker',
+        price: 2000,
+        originalPrice: 3000,
+        discount: 33,
+        rating: 4.2,
+        reviewCount: 127,
+        images: [
+            'https://images.pexels.com/photos/54206/pexels-photo-54206.jpeg'
+       ],
+        colors: [
+              { name: 'black', value: '#000000ff', image: 'https://images.pexels.com/photos/54206/pexels-photo-54206.jpeg' }
+        ],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        category: 'jackets',
+        description: 'a perfect jacket to keep you warm duing winter times',
+        features: [ 'Drawstring hood', 'Kangaroo pocket', 'Machine washable'],
+        inStock: true,
+        isBestSeller: false
+    },
+    {
+        id: '20',
+        name: 'high durability jacket',
+        price: 1699,
+        originalPrice: 2000,
+        discount: 15,
+        rating: 3.5,
+        reviewCount: 127,
+        images: [
+            'https://images.pexels.com/photos/1484771/pexels-photo-1484771.jpeg'   
+        ],
+        colors: [
+            { name: ' Green', value: '#2d432dff', image: 'https://images.pexels.com/photos/1484771/pexels-photo-1484771.jpeg' },
+            ],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        category: 'hoodies',
+        description: 'leather jacket fir for everyone',
+        features: ['tear resistant', 'high-quality material'],
+        inStock: true,
+        isBestSeller: false
+    },
+    {
+        id: '21',
+        name: 'premium cold resistance jacket',
+        price: 1200,
+        originalPrice: 1500,
+        discount: 20,
+        rating: 4.0,
+        reviewCount: 127,
+        images: [
+            'https://images.pexels.com/photos/106567/pexels-photo-106567.jpeg'
+         ],
+        colors: [
+             { name: 'black', value: '#000000ff', image: 'https://images.pexels.com/photos/106567/pexels-photo-106567.jpeg' }
+        ],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        category: 'jackets',
+        description: 'Crafted from premium 100% organic cotton, this jacket combines comfort with sustainability.',
+        features: ['long lasting design', 'Drawstring hood', 'Kangaroo pocket', ],
+        inStock: true,
+        isBestSeller: false
+    },
+    {
+        id: '22',
+        name: 'fany jeans for all ages',
+        price: 600,
+        originalPrice: 1000,
+        discount: 22,
+        rating: 3.6,
+        reviewCount: 45,
+        images: [
+        'https://images.pexels.com/photos/4210866/pexels-photo-4210866.jpeg'  
+        ],
+        colors: [
+            { name: 'whitesh blue', value: '#93def3ff', image: 'https://images.pexels.com/photos/4210866/pexels-photo-4210866.jpeg' },
+            { name: 'light blue', value: '#7ef2f6ff', image: 'https://images.pexels.com/photos/4210866/pexels-photo-4210866.jpeg' },
+            { name: 'blue', value: '#4597dfff', image: 'https://images.pexels.com/photos/4210866/pexels-photo-4210866.jpeg' },
+            { name: 'dark blue', value: '#22298bff', image: 'https://images.pexels.com/photos/4210866/pexels-photo-4210866.jpeg' },
+            { name: 'cargo blue', value: '#27228bff', image: 'https://images.pexels.com/photos/4210866/pexels-photo-4210866.jpeg' },],
+
+        sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        category: 'jeans',
+        description: 'long lasting with fitting design',
+        features: ['deep pockets', 'multicolor'],
+        inStock: true,
+        isBestSeller: false
+    },
+    {
         id: '2',
         name: 'Urban Street Hoodie',
         price: 4999,
