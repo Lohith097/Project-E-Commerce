@@ -79,14 +79,7 @@ function setupEventListeners() {
     document.getElementById('search-input').addEventListener('input', handleSearch);
     document.querySelector('.mobile-search .search-input').addEventListener('input', handleSearch);
 
-    // Modal close
-    document.getElementById('close-modal').addEventListener('click', closeLoginModal);
-    loginModal.addEventListener('click', (e) => {
-        if (e.target === loginModal) closeLoginModal();
-    });
-
-    // Auth form
-    setupAuthForm();
+    // Note: Auth forms now handled on separate pages
 }
 
 // Page Loading System
@@ -1399,7 +1392,7 @@ function setupAuthForm() {
 }
 
 function showLoginModal() {
-    loginModal.classList.remove('hidden');
+    window.location.href = 'login.html';
 }
 
 function closeLoginModal() {
@@ -1417,20 +1410,16 @@ function updateUserIndicator() {
 }
 
 function showUserMenu() {
-    const userMenu = confirm(`Hi ${currentUser.name}!\n\nChoose an option:\nOK - Logout\nCancel - Close`);
-    if (userMenu) {
-        currentUser = null;
-        localStorage.removeItem('currentUser');
-        updateUserIndicator();
-        showNotification('Logged out successfully', 'info');
-    }
+    
+        window.location.href = 'profile.html';
+    
 }
 
 // Utility Functions
 function handleCheckout() {
     if (!currentUser) {
         showNotification('Please login to checkout', 'error');
-        showLoginModal();
+        window.location.href = 'login.html';
         return;
     }
     
