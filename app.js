@@ -153,7 +153,7 @@ function loadHomePage() {
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-slide active">
-                <img src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Fashion Collection" class="hero-image">
+                <img src="https://images.pexels.com/photos/31367060/pexels-photo-31367060.png" alt="Fashion Collection" class="hero-image">
                 <div class="hero-overlay"></div>
                 <div class="hero-content">
                     <div class="hero-text">
@@ -170,7 +170,7 @@ function loadHomePage() {
                 </div>
             </div>
             <div class="hero-slide">
-                <img src="https://images.pexels.com/photos/1021693/pexels-photo-1021693.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Summer Collection" class="hero-image">
+                <img src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg" alt="Summer Collection" class="hero-image">
                 <div class="hero-overlay"></div>
                 <div class="hero-content">
                     <div class="hero-text">
@@ -187,7 +187,7 @@ function loadHomePage() {
                 </div>
             </div>
             <div class="hero-slide">
-                <img src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Urban Style" class="hero-image">
+                <img src="https://images.pexels.com/photos/54206/pexels-photo-54206.jpeg" alt="Urban Style" class="hero-image">
                 <div class="hero-overlay"></div>
                 <div class="hero-content">
                     <div class="hero-text">
@@ -208,6 +208,18 @@ function loadHomePage() {
                 <button class="hero-indicator" onclick="goToSlide(1)"></button>
                 <button class="hero-indicator" onclick="goToSlide(2)"></button>
             </div>
+            
+            <button class="hero-nav hero-prev" onclick="previousSlide()">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            
+            <button class="hero-nav hero-next" onclick="nextSlide()">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
         </section>
 
         <!-- Features Section -->
@@ -324,6 +336,13 @@ function loadHomePage() {
 
     // Start hero slider
     startHeroSlider();
+    
+    // Add hover pause functionality
+    const heroSection = document.querySelector('.hero');
+    if (heroSection) {
+        heroSection.addEventListener('mouseenter', pauseHeroSlider);
+        heroSection.addEventListener('mouseleave', resumeHeroSlider);
+    }
 }
 
 // Hero Slider Functions
@@ -331,7 +350,7 @@ function startHeroSlider() {
     heroSlideInterval = setInterval(() => {
         heroSlideIndex = (heroSlideIndex + 1) % 3;
         goToSlide(heroSlideIndex);
-    }, 5000);
+    }, 5000); // Changed to 5 seconds for better UX
 }
 
 function goToSlide(index) {
@@ -340,14 +359,38 @@ function goToSlide(index) {
     const indicators = document.querySelectorAll('.hero-indicator');
     
     slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) slide.classList.add('active');
+        slide.classList.remove('active', 'prev', 'next');
+        if (i === index) {
+            slide.classList.add('active');
+        } else if (i < index) {
+            slide.classList.add('prev');
+        } else {
+            slide.classList.add('next');
+        }
     });
     
     indicators.forEach((indicator, i) => {
         indicator.classList.remove('active');
         if (i === index) indicator.classList.add('active');
     });
+}
+
+function nextSlide() {
+    heroSlideIndex = (heroSlideIndex + 1) % 3;
+    goToSlide(heroSlideIndex);
+}
+
+function previousSlide() {
+    heroSlideIndex = (heroSlideIndex - 1 + 3) % 3;
+    goToSlide(heroSlideIndex);
+}
+
+function pauseHeroSlider() {
+    clearInterval(heroSlideInterval);
+}
+
+function resumeHeroSlider() {
+    startHeroSlider();
 }
 
 // SHOP PAGE
@@ -733,7 +776,9 @@ function loadProductPage(productId) {
                                 ${review.verified ? '<span class="verified-purchase">✓ Verified Purchase</span>' : ''}
                             </div>
                         `).join('')}
-                    </div>                
+                    </div>
+
+                    <button class="load-more-reviews">Load More Reviews</button>
                 </div>
             </div>
         </div>

@@ -4,37 +4,37 @@ const categories = [
         id: 'hoodies',
         name: 'Hoodies',
         image: 'https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=800',
-        productCount: 12
+        productCount: 6
     },
     {
         id: 'tshirts',
         name: 'T-Shirts',
         image: 'https://images.pexels.com/photos/1021693/pexels-photo-1021693.jpeg?auto=compress&cs=tinysrgb&w=800',
-        productCount: 18
+        productCount: 7
     },
     {
         id: 'jeans',
         name: 'Jeans',
         image: 'https://images.pexels.com/photos/1883385/pexels-photo-1883385.jpeg?auto=compress&cs=tinysrgb&w=800',
-        productCount: 15
+        productCount: 3
     },
     {
         id: 'jackets',
         name: 'Jackets',
         image: 'https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=800',
-        productCount: 10
+        productCount: 3
     },
     {
         id: 'sneakers',
         name: 'Sneakers',
         image: 'https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=800',
-        productCount: 20
+        productCount: 1
     },
     {
         id: 'accessories',
         name: 'Accessories',
         image: 'https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=800',
-        productCount: 25
+        productCount: 2
     }
 ];
 
@@ -321,7 +321,7 @@ const products = [
     },
     {
         id: '19',
-        name: 'winter times jacker',
+        name: 'winter times jacket',
         price: 2000,
         originalPrice: 3000,
         discount: 33,
