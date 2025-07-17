@@ -723,9 +723,7 @@ function loadProductPage(productId) {
                                 ${review.verified ? '<span class="verified-purchase">✓ Verified Purchase</span>' : ''}
                             </div>
                         `).join('')}
-                    </div>
-
-                    <button class="load-more-reviews">Load More Reviews</button>
+                    </div>                
                 </div>
             </div>
         </div>
