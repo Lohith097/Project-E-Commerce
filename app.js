@@ -433,7 +433,7 @@ function loadCartPage() {
     }
 
     const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    const shipping = subtotal > 99900 ? 0 : 9900; // Free shipping over ₹999
+    const shipping = subtotal > 999 ? 0 : 99; // Free shipping over ₹999
     const total = subtotal + shipping;
 
     mainContent.innerHTML = `
@@ -472,7 +472,7 @@ function loadCartPage() {
                         
                         ${shipping === 0 ? '' : `
                             <div class="shipping-notice">
-                                <p>Add ${formatPrice(99900 - subtotal)} more for free shipping!</p>
+                                <p>Add ${formatPrice(999 - subtotal)} more for free shipping!</p>
                             </div>
                         `}
                         
@@ -640,6 +640,16 @@ function loadProductPage(productId) {
                                     <span class="quantity-display" id="product-quantity">1</span>
                                     <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
                                 </div>
+                            </div>
+
+                            <div class="option-group">
+                                <label class="option-label">add to cart:</label>
+                            <button class="add-to-cart-btn" onclick="addToCartFromProduct()">
+                                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 6M7 13l-1.5 6m0 0h9M17 13v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6"></path>
+                                </svg>
+                                Add to Cart
+                            </button>
                             </div>
                         </div>
 
